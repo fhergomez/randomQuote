@@ -10,6 +10,7 @@ $(document).ready(function () {
     getColor();
   };
 
-  $("body").css('background', getColor());
+  $("body").css('background-color', getColor());
+  $("body").css('color', getColor());
 
 });
