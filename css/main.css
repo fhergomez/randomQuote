@@ -6,3 +6,13 @@
 body {
   padding: 50px;
 }
+
+#quote-box {
+  background-color: #fff;
+  width: 450px;
+  margin: 8% auto;
+  position: relative;
+  border-radius: 3px;
+  display: table;
+  padding: 40px 50px;
+}
