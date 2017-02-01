@@ -17,6 +17,10 @@ $(document).ready(function () {
 
   };
 
+  $('#quote-box').on('click', function () {
+
+    })
+
   $("body").css({
     'background-color': colors[color],
     'color': colors[color]
