@@ -14,12 +14,10 @@ $(document).ready(function () {
 
 
   function getQuote(){
-
+    $('.button').animate({ backgroundColor: colors[color]}, 1000);
   };
 
-  $('#quote-box').on('click', function () {
-
-    })
+  $('#quote-box').on('click', getQuote());
 
   $("body").css({
     'background-color': colors[color],
