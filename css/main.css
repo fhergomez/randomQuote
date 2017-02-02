@@ -4,13 +4,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
   padding: 50px;
+  font-size: 14px;
   font-family: 'Raleway', helvetica;
-  font-weight: 400p
+  font-weight: 400;
 }
 
 .quote-box {
@@ -24,11 +29,30 @@ body {
   padding: 40px 50px;
 }
 
+.quote-box .quote-text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+.quote-box .quote-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  text-align: right;
+  font-size: 1.1em;
+}
+
 .quote-box .buttons .button {
+  height: 38px;
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 0.85em;
+  font-size: 1em;
   padding: 8px 18px 6px 18px;
   margin-top: 30px;
   opacity: 1;
@@ -42,9 +66,9 @@ body {
 
 #tweet-quote {
   float: left;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
-  padding: 8px 0 28px 0;
+  padding: 8px 0 30px 0;
   margin-right: 5px;
   width: 40px;
   height: 30px;
