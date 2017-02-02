@@ -40,13 +40,17 @@ $(document).ready(function () {
         console.log(colors);
         var color = Math.floor(Math.random()*colors.length);
         console.log(color);
-        $('.button').animate({ backgroundColor: colors[color]}, 1000);
+        $('.button').css({ backgroundColor: colors[color]});
         $("body").css({
           'background-color': colors[color],
           'color': colors[color]
         });
       }
     });
+  };
+
+  function getTweet() {
+
   };
 
 
