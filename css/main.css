@@ -25,7 +25,7 @@ h1 {
 }
 
 .name {
-  opacity: 0.6;
+  opacity: 0.8;
   padding: 10px;
   text-align: center !important;
   position: relative;
@@ -43,6 +43,7 @@ h1 {
   border-radius: 3px;
   display: table;
   padding: 40px 50px;
+  opacity: 0.8;
 }
 
 .quote-box .quote-text {
