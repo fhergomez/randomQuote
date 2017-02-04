@@ -48,6 +48,7 @@ $(document).ready(function () {
           'background-size': 'cover',
           'color': colors[color]
         });
+        $('h1').animate({ color: colors[color]}, 1000);
       }
     });
   };
