@@ -9,6 +9,7 @@
 
 html {
   font-size: 10px;
+  opacity: 0.9;
 }
 
 body {
@@ -27,6 +28,15 @@ body {
   border-radius: 3px;
   display: table;
   padding: 40px 50px;
+}
+
+.tweet {
+  font-family: 'Raleway', helvetica;
+  background-color: #fff;
+  max-width: 640px;
+  min-width: 240px;
+  width: auto;
+  margin: 0 auto;
 }
 
 .quote-box .quote-text {

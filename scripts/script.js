@@ -9,6 +9,7 @@ $(document).ready(function () {
     colors.push("#" + Math.floor(Math.random()*16777215).toString(16)) // toString(16) will convert the number into a hexadecimal value
   }
 
+  var pics = ['./images/img1.jpg','./images/img2.jpg','./images/img3.jpg','./images/img4.jpg','./images/img5.jpg','./images/img6.jpg'];
 
 
   function getQuote(){
@@ -27,7 +28,7 @@ $(document).ready(function () {
         console.log(currentQuote, currentAuthor);
 
         // this puts the quote insed the <span id="text"> element
-        $('.quote-text, .button').fadeOut(1000, function () {
+        $('.quote-text').fadeOut(1000, function () {
           $('#text').html(currentQuote);
         }).fadeIn(1000);
 
@@ -39,10 +40,12 @@ $(document).ready(function () {
 
         console.log(colors);
         var color = Math.floor(Math.random()*colors.length);
+        var bg = Math.floor(Math.random() * pics.length);
         console.log(color);
-        $('.button').css({ backgroundColor: colors[color]});
-        $("body").css({
-          'background-color': colors[color],
+        $('.button').animate({ backgroundColor: colors[color]}, 1000);
+        $("html body").css({
+          'background': 'url(' + pics[bg] +') no-repeat center center fixed',
+          'background-size': 'cover',
           'color': colors[color]
         });
       }
@@ -50,7 +53,7 @@ $(document).ready(function () {
   };
 
   function getTweet() {
-
+    window.open('https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
   };
 
 
