@@ -21,7 +21,7 @@ $(document).ready(function () {
       },
       url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=',
       success: function (response) { // retrieves the data as a JSON object
-        // console.log(response);
+        console.log(response);
         var r = response;
         console.log(r);
         currentQuote = r.quote;
