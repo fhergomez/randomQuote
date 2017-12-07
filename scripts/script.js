@@ -20,11 +20,16 @@ $(document).ready(function () {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
+      type: 'POST', // The HTTP Method
+      data: {},
+      datatype: 'json',
       success: function (response) { // retrieves the data as a JSON object
-        console.log(response);
-        var r = response;
+        quote = JSON.parse(response);
+        console.log(quote);
+        var r = quote;
         console.log(r);
         currentQuote = r.quote;
+        console.log(currentQuote);
         currentAuthor = r.author || "unknown";
         console.log(currentQuote, currentAuthor);
 
